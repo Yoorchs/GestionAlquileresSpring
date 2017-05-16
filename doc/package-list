@@ -1,0 +1,17 @@
+com.ipartek.formacion
+com.ipartek.formacion.api
+com.ipartek.formacion.api.restfulclient
+com.ipartek.formacion.api.restfulservers
+com.ipartek.formacion.controller
+com.ipartek.formacion.controller.validator
+com.ipartek.formacion.dbms
+com.ipartek.formacion.dbms.dao
+com.ipartek.formacion.dbms.dao.interfaces
+com.ipartek.formacion.dbms.mappers
+com.ipartek.formacion.dbms.persistence
+com.ipartek.formacion.service
+com.ipartek.formacion.service.interfaces
+com.ipartek.formacion.service.utils
+com.ipartek.formacion.ws
+com.ipartek.formacion.ws.soapclients
+com.ipartek.formacion.ws.soapservers

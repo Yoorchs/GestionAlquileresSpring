@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="my-template"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+
+		<!-- Vamos a usar nuestra estructura, el menu esta ya incluido en el Header -->
+		<!-- <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" 
+			/> -->
+
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="home" extends="my-template">
+		<put-attribute name="title" value="Gestion Alquileres" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />
+	</definition>
+
+	<!-- Login Page -->
+	<definition name="login" extends="my-template">
+		<put-attribute name="title" value="login" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/login.jsp" />
+	</definition>
+
+	<!-- Footer -->
+	<definition name="footer" extends="my-template">
+		<put-attribute name="title" value="footer" />
+		<put-attribute name="body" value="/WEB-INF/views/includes/footer.jsp" />
+	</definition>
+	
+	  <!-- Listado de Inquilinos -->
+  <definition name="inquilinos" extends="my-template">  
+       <put-attribute name="title" value="Listado de Inquilinos" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/inquilinos/inquilinos.jsp" />  
+   </definition>
+   
+          <!-- Detalle de Inquilino -->
+  <definition name="inquilino" extends="my-template">  
+       <put-attribute name="title" value="Detalle de Inquilino" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/inquilinos/inquilino.jsp" />  
+   </definition>  
+   
+   	  <!-- Listado de Pisos -->
+  <definition name="pisos" extends="my-template">  
+       <put-attribute name="title" value="Listado de Pisos" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/pisos/pisos.jsp" />  
+   </definition>
+   
+      	  <!-- Detalles de Pisos -->
+  <definition name="piso" extends="my-template">  
+       <put-attribute name="title" value="Detalle de Piso" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/pisos/piso.jsp" />  
+   </definition>
+   
+      	  <!-- Listado de Propietarios -->
+  <definition name="propietarios" extends="my-template">  
+       <put-attribute name="title" value="Listado de Propietarios" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/propietarios/propietarios.jsp" />  
+   </definition>
+   
+         	  <!-- Detalle de Propietarios -->
+  <definition name="propietario" extends="my-template">  
+       <put-attribute name="title" value="Detalles de Propietario" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/propietarios/propietario.jsp" />  
+   </definition>
+   
+</tiles-definitions>
